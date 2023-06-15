@@ -45,7 +45,7 @@ $(document).ready(function(){
         // Get the form data and submit
         $.ajax({
             type: "post",
-            url:"http://127.0.0.1:8000",
+            url:"https://shareft9ja.pythonanywhere.com",
             data:formData,
             processData: false,
             contentType: false,
@@ -73,10 +73,10 @@ $(document).ready(function(){
                 $("#share_btn").click(()=>{
                     $("#shorten_link").html(`
                     
-                    <div class="mb-3 p-3 bg-dark text-white"><small>Visit: <a href="https://share-ft9ja.herokuapp.com/ft9ja/${resp.short_url}" class="text-white">https://share-ft9ja.herokuapp.com/ft9ja/${resp.short_url}</a></small></div>
+                    <div class="mb-3 p-3 bg-dark text-white"><small>Visit: <a href="https://shareft9ja.pythonanywhere.com/ft9ja/${resp.short_url}" class="text-white">https://shareft9ja.pythonanywhere.com/ft9ja/${resp.short_url}</a></small></div>
                     `)
                     // navigator.clipboard.writeText(`http://127.0.0.1:8000/ft9ja/${resp.short_url}`)
-                    navigator.clipboard.writeText(`https://share-ft9ja.herokuapp.com/ft9ja/${resp.short_url}`)
+                    navigator.clipboard.writeText(`https://shareft9ja.pythonanywhere.com/ft9ja/${resp.short_url}`)
                     window.alert("Link copied !")
                 })
                 // Add the video for streamng
