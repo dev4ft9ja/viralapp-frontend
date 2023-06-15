@@ -45,7 +45,7 @@ $(document).ready(function(){
         // Get the form data and submit
         $.ajax({
             type: "post",
-            url:"https://shareft9ja.pythonanywhere.com",
+            url:"https://shareft9ja.pythonanywhere.com/",
             data:formData,
             processData: false,
             contentType: false,
